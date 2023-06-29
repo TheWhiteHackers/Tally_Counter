@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Fira+Code&family=Fira+Sans&family=Geologica&family=Montserrat:wght@500&family=Rubik&display=swap');
+body{
+    padding: 10px;
+    background-color: #dda15e;
+    font-family: 'Fira Sans', sans-serif;
+
+}
+h1{
+    color: #fefae0;
+    font-family: 'Belanosima', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 40px;
+}
+.card{
+    text-align: center;
+    border: 1px solid black;
+    width: 200px;
+    height: 270px;
+    float: left;
+    margin: 10px;
+    padding: 5px;
+    background-color: #fefae0;
+    box-shadow: inset 0px 0px 10px 0px #f9dcc4;
+    border: none;
+    border-radius: 3px;
+}
+.plus{
+    font-size: 30px;
+    background-color: #606c38;
+    color: #fefae0;
+    height: 50px;
+    width: 40%;
+    border: none;
+    margin-left: 3px;
+}
+.minus{
+    font-size: 30px;
+    background-color: #606c38;
+    color: #fefae0;
+    height: 50px;
+    width: 40%;
+    border: none;
+    margin-right: 3px;
+}
+.num{
+    width: 80%;
+    height: 50%;
+    border: 1px solid black;
+}
+#addtally{
+    border: none;
+    font-size: 30px;
+    height: 50px;
+    width: 70px;
+    background-color: #bc6c25;
+    color: #fefae0;
+}
