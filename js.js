@@ -13,7 +13,7 @@ let cardcount = 1;
 
 button.addEventListener("click", function tallycounter(){
 
-containdiv.innerHTML+="<div class='card'><input type='text'><div class='num' id='card"+cardcount+"'>0</div><button class='minus' onclick='tallyupdate("+cardcount+", -1)'>-</button><button class='plus' onclick='tallyupdate("+cardcount+", 1)'>+</button></div>";
+containdiv.innerHTML+="<div class='card'><input type='text'><center><div class='num' id='card"+cardcount+"'>0</div></center><button class='minus' onclick='tallyupdate("+cardcount+", -1)'>-</button><button class='plus' onclick='tallyupdate("+cardcount+", 1)'>+</button></div>";
 cardcount++;
 
 });
