@@ -59,6 +59,8 @@ h1{
     font-size: 30px;
     height: 50px;
     width: 70px;
+    box-shadow: inset 0px 0px 7px 0px #b06523;
+    border-radius: 2px;
     background-color: #bc6c25;
     color: #fefae0;
 }
