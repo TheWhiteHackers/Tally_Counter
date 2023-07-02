@@ -1,20 +1,29 @@
 const button = document.getElementById("addtally");
 const containdiv = document.getElementById("contain");
-const addbtn = document.getElementsByClassName("plus")
+const addbtn = document.querySelector(".plus");
+
+console.log(addbtn);
 
 const subbtn = document.getElementsByClassName("minus");
+const num = document.getElementsByClassName("num");
+
+
+let cardcount = 1;
+
 
 button.addEventListener("click", function tallycounter(){
 
-containdiv.innerHTML+="<div class='card'><input type='text'><div class='num'></div><button class='minus'>-</button><button class='plus'>+</button></div>";
+containdiv.innerHTML+="<div class='card'><input type='text'><div class='num' id='card"+cardcount+"'>0</div><button class='minus' onclick='tallyupdate("+cardcount+", -1)'>-</button><button class='plus' onclick='tallyupdate("+cardcount+", 1)'>+</button></div>";
+cardcount++;
 
 });
 
+function tallyupdate(id, inc){
 
-let counter=0;
-addbtn.addEventListener("click", function() {
-    counter++
-});
+let currentnum = document.getElementById("card"+id).innerHTML;
 
-console.log(counter);
+document.getElementById("card"+id).innerHTML = currentnum*1+inc;
+
+
+};
 
